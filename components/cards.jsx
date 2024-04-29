@@ -10,7 +10,7 @@ export default function Cards(props){
                 {/* Aqui va el map */}
                 {
                     datos.map((e, index) => (
-                        <div key={index} className=" mx-8 h-fit mt-8 rounded-xl">
+                        <div key={index} className="cursor-pointer hover:bg-neutral-900 mx-8 h-fit mt-8 p-4 rounded-xl">
                             <div className="h-[40%] w-full">
                                 <p className="absolute ml-3 mt-3 bg-yellow-200 text-black px-2 rounded-md">{ e.popular && "Popular" }</p>
                                 <Image src={e.image} width={400} height={250} alt="imagen del cafe" className="w-full rounded-xl" />

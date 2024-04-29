@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Cards from "./cards";
+import Esqueleto from "./esqueleto"
 
 export default function SwithModal() {
 
@@ -21,12 +22,10 @@ export default function SwithModal() {
         <div>
         {
             mostrar ?
-            <div>
-                Cargando...
-            </div>
+            <Esqueleto/>
             :
             <div>
-                <Cards datos={datos}/>
+               <Cards datos={datos}/>
             </div>
         }
         </div>
